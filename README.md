@@ -30,7 +30,7 @@
 ```
 start - 🦋 Bot Alive Cheking
 stop - 🛑 Upload stop
-uplod - 🎬 Txt file upload
+TXT - 🎬 Txt file upload
 ```
 
 
