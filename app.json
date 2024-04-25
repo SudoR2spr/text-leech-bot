@@ -8,7 +8,7 @@
         "pyrogram"
     ],
     "repository": "https://github.com/SudoR2spr/txt-leech-bot",
-    "success_url": "https://t.me/Opleech_WD",
+    "success_url": "https://t.me/Medicoarmy",
     "stack": "container",
     "env": {
         "API_ID": {
