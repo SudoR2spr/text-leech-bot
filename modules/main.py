@@ -109,14 +109,15 @@ async def account_login(bot: Client, m: Message):
     
     
 
-    await editable.edit("**Enter Your Name or send `de` for use default**")
+    await editable.edit("✏️ Now Enter A Caption to add caption on your uploaded file")
     input3: Message = await bot.listen(editable.chat.id)
     raw_text3 = input3.text
     await input3.delete(True)
-    if raw_text3 == 'de':
-        CR = credit
+    highlighter  = f"️ ⁪⁬⁮⁮⁮"
+    if raw_text3 == 'Robin':
+        MR = highlighter 
     else:
-        CR = raw_text3
+        MR = raw_text3
    
     await editable.edit("🌄 Now send the Thumb url\nEg » https://graph.org/file/87dd86d1e81b88d041d75.jpg \n\n Or if don't want thumbnail send = no")
     input6 = message = await bot.listen(editable.chat.id)
