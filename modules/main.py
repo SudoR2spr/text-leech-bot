@@ -9,7 +9,7 @@ import subprocess
 
 import core as helper
 from utils import progress_bar
-from vars import api_id, api_hash, bot_token
+from vars import API_ID, API_HASH, BOT_TOKEN
 from aiohttp import ClientSession
 from pyromod import listen
 from subprocess import getstatusoutput
@@ -24,9 +24,10 @@ from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 bot = Client(
     "bot",
-    api_id=api_id,
-    api_hash=api_hash,
-    bot_token=bot_token)
+    api_id=API_ID,
+    api_hash=API_HASH,
+    bot_token=BOT_TOKEN)
+
 
 
 @bot.on_message(filters.command(["start"]))
@@ -37,7 +38,7 @@ async def account_login(bot: Client, m: Message):
                 [
                     InlineKeyboardButton("✜ 𝐉𝐨𝐢𝐧 𝐔𝐩𝐃𝐚𝐭𝐞 𝐂𝐡𝐚𝐧𝐧𝐞𝐥 ✜" ,url=f"https://t.me/Opleech_WD") ],
                     [
-                    InlineKeyboardButton("✜◆ 𝐂𝐨𝐧𝐭𝐚𝐜𝐭 ◆✜" ,url="https://t.me/WD_Request_Bot") ],
+                    InlineKeyboardButton("✜ 𝗔𝘀𝗵𝘂𝘁𝗼𝘀𝗵𝗚𝗼𝘀𝘄𝗮𝗺𝗶𝟮𝟰 ✜" ,url="https://t.me/AshutoshGoswami24") ],
                     [
                     InlineKeyboardButton("🦋 𝐅𝐨𝐥𝐥𝐨𝐰 𝐌𝐞 🦋" ,url="https://t.me/Opleech_WD/13") ]                               
             ]))
