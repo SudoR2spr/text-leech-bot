@@ -27,10 +27,6 @@
 
 * `API_HASH` - From my.telegram.org
 
-* `OWNER_ID` - From @MissRose_bot [Rose Mam](https://t.me/MissRose_bot)
-
-* `SUDO_USERS` - AUTH Or Bot Controllers Id's Multiple Id Use Space To Split
-
 
 ## Botfather Commands
 ```
@@ -51,4 +47,4 @@ uplod - 🎬 Txt file upload
 -----
 Credits: [𝐖𝐎𝐎𝐃𝐜𝐫𝐚𝐟𝐭](https://t.me/Farooq_is_KING) [𝗔𝘀𝗵𝘂𝘁𝗼𝘀𝗵𝗚𝗼𝘀𝘄𝗮𝗺𝗶𝟮𝟰](https://github.com/AshutoshGoswami24)
 
-Last Edited on: 06/15/2024
+Last Edited on: 06/18/2024
