@@ -21,24 +21,21 @@
 
 ## vars.py [vars.py](https://github.com/SudoR2spr/txt-leech-bot/blob/main/modules/vars.py)
 
-* `BOT_TOKEN`  - Get Bot Token From @BotFather
+* BOT_TOKEN  - 7495845718:AAFWpgMI97godgsuwAxx8mK_YySWGeRMz6I
 
-* `API_ID` - From my.telegram.org 
+* API_ID - 28526237
 
-* `API_HASH` - From my.telegram.org
+* API_HASH - 936db76a74f9a52cfb2cea8a62e4c20e
 
-* `OWNER_ID` - From @MissRose_bot [Rose Mam](https://t.me/MissRose_bot)
+* OWNER_ID - 6486192717
 
-* `SUDO_USERS` - AUTH Or Bot Controllers Id's Multiple Id Use Space To Split
+* SUDO_USERS - AUTH Or Bot Controllers Id's Multiple Id Use Space To Split
 
 
 ## Botfather Commands
-```
 start - 🦋 Bot Alive Cheking
 stop - 🛑 Upload stop
 uplod - 🎬 Txt file upload
-```
-
 
 ## Connect with me <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="30px">
 <p align="center">
