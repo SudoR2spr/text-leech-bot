@@ -25,7 +25,7 @@
         "colab_type": "text"
       },
       "source": [
-        "<a href=\"https://colab.research.google.com/github/SudoR2spr/text-leech-bot/blob/main/AshutoshGoswami24\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+        "<a href=\"https://drive.google.com/file/d/1-cu-cJj03tknNZ8ohQKm79-Im_J9t5nT/view?usp=sharing\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
       ]
     },
     {
@@ -41,13 +41,13 @@
         "import shutil\n",
         "from IPython.display import clear_output\n",
         "\n",
-        "#@title <h1><B><font color=red>𝗧𝗘𝗫𝗧-𝗟𝗘𝗘𝗖𝗛-𝗕𝗢𝗧</B>\n",
-        "# @markdown <div><center><a href=\"https://github.com/SudoR2spr/text-leech-bot/graphs/contributors\"><img height=\"200\"  src=\"https://opengraph.githubassets.com/niszjzjrdlws31z4hurrzabavate8t0g/SudoR2spr/text-leech-bot\"></center></div>\n",
-        "# @markdown <br><center><h2><strong><font color=red>𝗧𝗘𝗫𝗧-𝗟𝗘𝗘𝗖𝗛-𝗕𝗢𝗧</strong></h2></center>\n",
+        "#@title <h1><B><font color=red>𝗧𝗘𝗫𝗧-𝗟𝗘𝗘𝗖𝗛-𝗕𝗢𝗧 <img src='https://i.ibb.co/BPnZ2xy/Telegram-Api.png' height=\"40\" /> </center> { display-mode: \"form\" }\n",
+        "# @markdown <div><center><a href=\"https://github.com/SudoR2spr/text-leech-bot-v2/graphs/contributors\"><img height=\"200\"  src=\"https://opengraph.githubassets.com/niszjzjrdlws31z4hurrzabavate8t0g/SudoR2spr/text-leech-bot-v2\"></center></div>\n",
+        "# @markdown <br><center><h2><strong><font color=red>🔗 𝗧𝗘𝗫𝗧-𝗟𝗘𝗘𝗖𝗛-𝗕𝗢𝗧 🔗</strong></h2></center>\n",
         "\n",
         "\n",
-        "#@markdown <font color=ORANGE> Please enter the GitHub repository URL:\n",
-        "GITHUB_URL = \"https://github.com/SudoR2spr/text-leech-bot\"  #@param {type:\"string\"}\n",
+        "#@markdown <font color=ORANGE>🔗 Please enter the GitHub repository URL: 🔗\n",
+        "GITHUB_URL = \"https://github.com/SudoR2spr/text-leech-bot-v2\"  #@param {type:\"string\"}\n",
         "\n",
         "# Determine base directory based on environment\n",
         "base_dir = './repo'  # Save repo in ./repo directory relative to current directory\n",
@@ -81,7 +81,7 @@
         "\n",
         "clear_output()\n",
         "\n",
-        "#@markdown <font color=ORANGE>Please enter the requirements.txt file path:\n",
+        "#@markdown <font color=ORANGE>🔧 Please enter the requirements.txt file path: 🔧\n",
         "PIP_INSTALL = \"Installer\"  #@param {type:\"string\"}\n",
         "\n",
         "# Install required dependencies\n",
@@ -91,7 +91,7 @@
         "\n",
         "clear_output()\n",
         "\n",
-        "#@markdown <font color=ORANGE> Install FFMPEG?\n",
+        "#@markdown <font color=ORANGE>🎥 Install FFMPEG? 🎥\n",
         "install_ffmpeg = \"Yes\"  #@param [\"Yes\", \"No\"]\n",
         "if install_ffmpeg == \"Yes\":\n",
         "    print(\"Installing FFMPEG...\")\n",
@@ -100,26 +100,32 @@
         "else:\n",
         "    print(\"Skipping FFMPEG installation.\")\n",
         "\n",
-        "#@markdown ### <font color=ORANGE>Environment Variables\n",
+        "#@markdown ### <font color=ORANGE>🔧 Environment Variables 🔧\n",
         "\n",
+	"#@markdown <center> <font color=green>✍️ Paste Your Telegram API ID From ≫ my.telegram.org <img src='https://i.ibb.co/BPnZ2xy/Telegram-Api.png' height=\"40\" /> </center> { display-mode: \"form\" }\n",
+	"\n",
         "API_ID = \"\"  #@param {type:\"string\"}\n",
         "os.environ['API_ID'] = API_ID\n",
         "\n",
+	"#@markdown <center> </font> <font color=green>✍️ Paste Your Telegram API HASH From ≫ my.telegram.org <img src='https://i.ibb.co/BPnZ2xy/Telegram-Api.png' height=\"40\" /> </center> { display-mode: \"form\" }\n",
+	"\n",
         "API_HASH = \"\"  #@param {type:\"string\"}\n",
         "os.environ['API_HASH'] = API_HASH\n",
         "\n",
+	"#@markdown <center> </font> <font color=green>✍️ Paste Your Telegram BOT TOKEN From ≫ @BotFather <img src='https://i.ibb.co/Fw8McpS/Telegram-Bot-token.png' height=\"40\" /> </center> { display-mode: \"form\" }\n",
+	"\n",
         "BOT_TOKEN = \"\"  #@param {type:\"string\"}\n",
         "os.environ['BOT_TOKEN'] = BOT_TOKEN\n",
         "\n",
         "clear_output()\n",
         "\n",
-        "#@markdown <font color=ORANGE>Please enter the Profile command:\n",
+        "#@markdown <font color=ORANGE>🔧 Please enter the Profile command: 🔧\n",
         "RUN_COMMAND = \"python3 modules/main.py\"  #@param {type:\"string\"}\n",
         "\n",
         "# Run the bot\n",
         "print(f\"Running command: {RUN_COMMAND} ...\")\n",
         "!{RUN_COMMAND}\n",
-        "print(\"Execution completed!\")\n"
+        "print(\"✔️ Execution completed!\")\n"
       ]
     }
   ]
