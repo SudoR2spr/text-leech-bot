@@ -47,7 +47,7 @@
         "\n",
         "\n",
         "#@markdown <font color=ORANGE>🔗 Please enter the GitHub repository URL: 🔗\n",
-        "GITHUB_URL = \"https://github.com/SudoR2spr/text-leech-bot-v2\"  #@param {type:\"string\"}\n",
+        "GITHUB_URL = \"https://github.com/SudoR2spr/text-leech-bot\"  #@param {type:\"string\"}\n",
         "\n",
         "# Determine base directory based on environment\n",
         "base_dir = './repo'  # Save repo in ./repo directory relative to current directory\n",
