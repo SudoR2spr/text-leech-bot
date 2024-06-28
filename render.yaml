@@ -17,4 +17,4 @@ services:
       - key: WEBHOOK
         sync: false
       - key: PORT
-        value: 8000  
+        sync: false
