@@ -1,13 +1,10 @@
 from aiohttp import web
 
-routes = web.RouteTableDef()
-
-@routes.get("/", allow_head=True)
-async def root_route_handler(request):
-    return web.json_response("https://github.com/AshutoshGoswami24 && https://github.com/SudoR2spr")
-
-
 async def web_server():
-    web_app = web.Application(client_max_size=30000000)
-    web_app.add_routes(routes)
-    return web_app
+    app = web.Application()
+    # Define your routes here, for example:
+    app.router.add_get('/', hello)
+    return app
+
+async def hello(request):
+    return web.Response(text="https://github.com/AshutoshGoswami24 && https://github.com/SudoR2spr")
