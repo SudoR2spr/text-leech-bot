@@ -9,10 +9,11 @@ import subprocess
 
 import core as helper
 from utils import progress_bar
-from vars import API_ID, API_HASH, BOT_TOKEN
+from vars import API_ID, API_HASH, BOT_TOKEN, WEBHOOK, PORT
 from aiohttp import ClientSession
 from pyromod import listen
 from subprocess import getstatusoutput
+from aiohttp import web
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
@@ -22,14 +23,32 @@ from pyrogram.types.messages_and_media import message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
+# Initialize the bot
 bot = Client(
     "bot",
     api_id=API_ID,
     api_hash=API_HASH,
-    bot_token=BOT_TOKEN)
+    bot_token=BOT_TOKEN
+)
 
+async def web_server():
+    app = web.Application()
+    app.router.add_get('/', hello)
+    return app
 
+async def hello(request):
+    return web.Response(text="https://github.com/AshutoshGoswami24 && https://github.com/SudoR2spr")
 
+async def main():
+    if WEBHOOK:
+        app_runner = web.AppRunner(await web_server())
+        await app_runner.setup()
+        site = web.TCPSite(app_runner, "0.0.0.0", PORT)
+        await site.start()
+
+    await bot.start()
+    print("Bot is up and running")
+    await asyncio.Event().wait()
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(
@@ -224,4 +243,5 @@ print("""
 print("""✅ 𝐃𝐞𝐩𝐥𝐨𝐲 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 ✅""")
 print("""✅ 𝐁𝐨𝐭 𝐖𝐨𝐫𝐤𝐢𝐧𝐠 ✅""")
 
-bot.run()
+if __name__ == "__main__":
+    asyncio.run(main())
