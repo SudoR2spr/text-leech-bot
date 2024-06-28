@@ -9,11 +9,11 @@ import subprocess
 
 import core as helper
 from utils import progress_bar
-from .vars import API_ID, API_HASH, BOT_TOKEN, WEBHOOK, PORT
+from vars import API_ID, API_HASH, BOT_TOKEN, WEBHOOK, PORT
 from aiohttp import ClientSession
 from pyromod import listen
 from subprocess import getstatusoutput
-from .route import web_server
+from route import web_server
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
