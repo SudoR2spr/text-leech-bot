@@ -13,7 +13,7 @@ from vars import *
 from aiohttp import ClientSession
 from pyromod import listen
 from subprocess import getstatusoutput
-from route import web_server
+from modules.route import web_server
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
@@ -28,6 +28,7 @@ bot = Client(
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN)
+
 async def main():
     if WEBHOOK:
         app = web.AppRunner(await web_server())
@@ -36,9 +37,8 @@ async def main():
         await site.start()
 
     await bot.start()
-
-    print("Bot {PORT} is up and running")
-    await idle()  # To keep the bot running
+    print("Bot is up and running")
+    await asyncio.Event().wait()
 
 
 @bot.on_message(filters.command(["start"]))
