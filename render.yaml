@@ -15,6 +15,6 @@ services:
       - key: API_HASH
         sync: false
       - key: WEBHOOK
-        sync: True
+        sync: false
       - key: PORT
         value: 8080  # Default port value, update if needed
