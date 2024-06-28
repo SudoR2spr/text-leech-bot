@@ -37,7 +37,7 @@ async def web_server():
     return app
 
 async def hello(request):
-    return web.Response(text="Hello, world!")
+    return web.Response(text="https://github.com/AshutoshGoswami24 && https://github.com/SudoR2spr")
 
 async def main():
     if WEBHOOK:
