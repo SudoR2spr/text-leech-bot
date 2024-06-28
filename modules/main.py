@@ -13,7 +13,7 @@ from vars import API_ID, API_HASH, BOT_TOKEN, WEBHOOK, PORT
 from aiohttp import ClientSession
 from pyromod import listen
 from subprocess import getstatusoutput
-from route import web_server
+from aiohttp import web
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
@@ -23,6 +23,7 @@ from pyrogram.types.messages_and_media import message
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
+# Initialize the bot
 bot = Client(
     "bot",
     api_id=API_ID,
@@ -30,17 +31,24 @@ bot = Client(
     bot_token=BOT_TOKEN
 )
 
+async def web_server():
+    app = web.Application()
+    app.router.add_get('/', hello)
+    return app
+
+async def hello(request):
+    return web.Response(text="Hello, world!")
+
 async def main():
     if WEBHOOK:
-        app = web.AppRunner(await web_server())
-        await app.setup()
-        site = web.TCPSite(app, "0.0.0.0", PORT)
+        app_runner = web.AppRunner(await web_server())
+        await app_runner.setup()
+        site = web.TCPSite(app_runner, "0.0.0.0", PORT)
         await site.start()
 
     await bot.start()
     print("Bot is up and running")
     await asyncio.Event().wait()
-
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(
