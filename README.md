@@ -21,7 +21,7 @@
 
 ## Deploy To Koyeb
               
-<a target="/blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/AshutoshGoswami24/text-leech-bot-for-render&branch=main&name=BotKing-Ashu" >
+<a target="/blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/AshutoshGoswami24/text-leech-bot-for-render&branch=main&name=botking-ashu" >
   <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy"></a>
 
 ## Deploy To Render                  
