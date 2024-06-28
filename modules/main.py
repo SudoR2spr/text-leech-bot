@@ -9,7 +9,7 @@ import subprocess
 
 import core as helper
 from utils import progress_bar
-from vars import API_ID, API_HASH, BOT_TOKEN
+from vars import *
 from aiohttp import ClientSession
 from pyromod import listen
 from subprocess import getstatusoutput
@@ -28,10 +28,17 @@ bot = Client(
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN)
-if WEBHOOK:
-    app = web.AppRunner(await web_server())
-    await app.setup()
-    await web.TCPSite(app, "0.0.0.0", PORT).start()
+async def main():
+    if WEBHOOK:
+        app = web.AppRunner(await web_server())
+        await app.setup()
+        site = web.TCPSite(app, "0.0.0.0", PORT)
+        await site.start()
+
+    await bot.start()
+
+    print("Bot {PORT} is up and running")
+    await idle()  # To keep the bot running
 
 
 @bot.on_message(filters.command(["start"]))
