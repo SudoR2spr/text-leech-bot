@@ -13,6 +13,7 @@ from vars import API_ID, API_HASH, BOT_TOKEN
 from aiohttp import ClientSession
 from pyromod import listen
 from subprocess import getstatusoutput
+from route import web_server
 
 from pyrogram import Client, filters
 from pyrogram.types import Message
@@ -27,7 +28,10 @@ bot = Client(
     api_id=API_ID,
     api_hash=API_HASH,
     bot_token=BOT_TOKEN)
-
+if WEBHOOK:
+    app = web.AppRunner(await web_server())
+    await app.setup()
+    await web.TCPSite(app, "0.0.0.0", PORT).start()
 
 
 @bot.on_message(filters.command(["start"]))
