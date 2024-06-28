@@ -1,7 +1,8 @@
 <!-- RAINBOW LINE TOP -->
 <img src="https://github.com/SudoR2spr/SudoR2spr/raw/main/assets/line-neon.gif" width="100%">
 
-## successfully archived.
+### REPO NOT WORKING 
+## Successfully archived.
 
 ❊ If you don't like the repo, I'm archived it No one is giving stars, sorry
 ❊ I don't want to waste my time, your time has a lot of value, my time has no value?
