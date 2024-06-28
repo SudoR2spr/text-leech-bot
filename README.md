@@ -19,6 +19,12 @@
   <img src="https://ashutoshgoswami24.github.io/Me/img/gc.png" alt="Deploy To Google Colab" style="width:200px;"/>
 </a>
 
+## Deploy To Koyeb
+              
+<a target="/blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/AshutoshGoswami24/text-leech-bot-for-render&branch=main&name=BotKing-Ashu" >
+  <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy"></a>
+
+
 ## vars.py [vars.py](https://github.com/SudoR2spr/txt-leech-bot/blob/main/modules/vars.py)
 
 * `BOT_TOKEN`  - Get Bot Token From @BotFather
