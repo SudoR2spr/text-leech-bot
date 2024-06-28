@@ -2,7 +2,6 @@ from aiohttp import web
 
 async def web_server():
     app = web.Application()
-    # Define your routes here, for example:
     app.router.add_get('/', hello)
     return app
 
