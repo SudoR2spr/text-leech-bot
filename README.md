@@ -23,7 +23,9 @@
               
 <a target="/blank" href="https://app.koyeb.com/deploy?type=git&repository=github.com/AshutoshGoswami24/text-leech-bot-for-render&branch=main&name=BotKing-Ashu" >
   <img src="https://www.koyeb.com/static/images/deploy/button.svg" alt="Deploy"></a>
+## Deploy To Render                  
 
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/AshutoshGoswami24/text-leech-bot-for-render)
 
 ## vars.py [vars.py](https://github.com/SudoR2spr/txt-leech-bot/blob/main/modules/vars.py)
 
