@@ -21,3 +21,4 @@ aiofiles
 pytz
 umongo
 speedtest-cli
+aiohttp
