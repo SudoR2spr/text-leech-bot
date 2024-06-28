@@ -9,7 +9,7 @@ import subprocess
 
 import core as helper
 from utils import progress_bar
-from vars import *
+from modules.vars import API_ID, API_HASH, BOT_TOKEN, WEBHOOK, PORT  # Adjusted import statement
 from aiohttp import ClientSession
 from pyromod import listen
 from subprocess import getstatusoutput
@@ -39,7 +39,6 @@ async def main():
     await bot.start()
     print("Bot is up and running")
     await asyncio.Event().wait()
-
 
 @bot.on_message(filters.command(["start"]))
 async def account_login(bot: Client, m: Message):
@@ -235,4 +234,5 @@ print("""
 print("""✅ 𝐃𝐞𝐩𝐥𝐨𝐲 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥𝐥𝐲 ✅""")
 print("""✅ 𝐁𝐨𝐭 𝐖𝐨𝐫𝐤𝐢𝐧𝐠 ✅""")
 
-bot.run()
+if __name__ == "__main__":
+    asyncio.run(main())
