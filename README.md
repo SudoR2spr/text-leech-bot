@@ -36,6 +36,8 @@
 
 * `API_HASH` - From my.telegram.org
 
+* `PORT` - `8080`
+
 
 ## Botfather Commands
 ```
