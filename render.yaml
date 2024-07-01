@@ -4,7 +4,7 @@ services:
     plan: free
     env: docker
     dockerfilePath: Dockerfile
-    repo: https://github.com/AshutoshGoswami24/text-leech-bot-for-render
+    repo: https://github.com/SudoR2spr/text-leech-bot/edit/heroku
     branch: main
     autoDeploy: false
     envVars:
@@ -17,4 +17,4 @@ services:
       - key: WEBHOOK
         sync: false
       - key: PORT
-        value: 8000  # Default port value, update if needed
+        sync: false
