@@ -9,4 +9,6 @@ COPY . /app/
 WORKDIR /app/
 RUN pip3 install --no-cache-dir --upgrade -r Installer
 
-CMD ["python3", "modules/main.py"]
+# CMD ["python3", "modules/main.py"]
+CMD gunicorn app:app & python3 modules/main.py
+
