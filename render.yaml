@@ -4,8 +4,8 @@ services:
     plan: free
     env: docker
     dockerfilePath: Dockerfile
-    repo: https://github.com/AshutoshGoswami24/text-leech-bot-for-render
-    branch: main
+    repo: https://github.com/SudoR2spr/text-leech-bot
+    branch: Koyeb-Render
     autoDeploy: false
     envVars:
       - key: BOT_TOKEN
